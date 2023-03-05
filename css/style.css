@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+@font-face {
+    font-family: 'droid';
+    src: url(../fontes/idroid.otf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color0: #103328;
+    --color1: #53a389;
+    --color2: #35a174;
+    --color3: #0fd68a;
+    --color4: #DAD7CD;
+}
+body {
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to top, var(--color0), var(--color1));
+    padding-top: 50px;
+    min-height: 150px;
+    min-width: 300px;
+}
+
+header h1 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 60px;
+}
+
+header p {
+    color: white;
+    padding: 20px 20px 50px 20px;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    max-width: 600px;
+}
+
+nav {
+    background-color: var(--color0);
+    padding: 20px;
+    min-width: 300px;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.3em;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    color: #103328;
+    transition-duration: 0.5s;
+    background-color: var(--color2);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 2px 5px #0000006c;
+    padding: 20px;
+}
+
+main img {
+    width: 100%;
+}
+
+main strong {
+    color: var(--color0);
+}
+main .pequeno {
+    width: 65%;
+    display: block;
+    margin: auto;
+}
+.video {
+    background-color: var(--color0);
+    margin: 0 -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+section h1 {
+    font-family: 'droid';
+    text-align: left;
+    font-weight: bolder;
+    font-size: 3em;
+    color: var(--color0);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
+}
+
+section h2 {
+    font-family: 'droid';
+    text-align: left;
+    font-size: 2em;
+    color: var(--color3);
+    background-image: linear-gradient(to right, var(--color2), transparent);
+    max-width: 1000px;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 20px 0px 0px 20px;
+}
+
+section p {
+    text-align: justify;
+    font-size: 1em;
+    text-indent: 30px;
+    padding: 15px;
+    line-height: 1.5em;
+    line-height: 2em;
+}
+
+section a {
+    background-color: var(--color2);
+    color: var(--color3);
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+section a::after{
+    content: '🔗';
+
+}
+section a:hover {
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    border-radius: 20px;
+}
+
+section img {
+    border-radius: 20px;
+}
+
+aside {
+    margin-top: 15px;
+    background-color: var(--color2);
+    border-radius: 20px;
+    text-align: left;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+aside h3 {
+    text-align: center;
+    background-color: var(--color0);
+    color: white;
+    font-size: 1.8em;
+    padding-top: 15px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+aside p {
+    padding: 8px;
+    font-size: 20px,;
+}
+
+aside a {
+    background-color: var(--color2);
+    color: var(--color3);
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+aside a:hover {
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    border-radius: 20px;
+}
+
+aside a::after {
+        content: '🔗';
+}
+ul {
+    padding: 5px;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0';
+    columns: 2;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--color0);
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
