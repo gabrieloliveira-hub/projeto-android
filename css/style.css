@@ -107,6 +107,7 @@ main .pequeno {
 }
 
 .video iframe {
+    border-radius: 20px;
     position: absolute;
     top: 5%;
     left: 5%;
@@ -211,6 +212,7 @@ aside a::after {
 }
 ul {
     padding: 5px;
+    padding-left: 20px;
     list-style-position: inside;
     list-style-type: '\2714\00A0';
     columns: 2;
